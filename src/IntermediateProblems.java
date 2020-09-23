@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class IntermediateProblems {
 
@@ -114,7 +114,11 @@ public class IntermediateProblems {
     }
 
     public static int closestValuesBetter(int[] array1, int[] array2){
-        
+        Arrays.sort(array1);
+        Arrays.sort(array2);
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array2));
+
         return 0;
     }
 
@@ -146,6 +150,7 @@ public class IntermediateProblems {
         //16.6
         int[] array1 = new int[]{1, 3, 15, 11, 2};
         int[] array2 = new int[]{23, 127, 235, 19, 8};
-        System.out.println(closestValues(array1, array2));
+        //System.out.println(closestValues(array1, array2));
+        closestValuesBetter(array1, array2);
     }
 }
