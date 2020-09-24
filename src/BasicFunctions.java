@@ -48,6 +48,5 @@ public class BasicFunctions {
         //System.out.println(reverseSentence("This is the end for you my master"));
         System.out.println(isPrimeNumber(29));
 
-
     }
 }
