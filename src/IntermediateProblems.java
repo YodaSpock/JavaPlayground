@@ -1,4 +1,6 @@
-
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class IntermediateProblems {
 
@@ -113,9 +115,63 @@ public class IntermediateProblems {
         return smallest_difference;
     }
 
+    //DO NOT USE -> MORE TIME TO INCREASE RUNTIME, right now infinite loop...
     public static int closestValuesBetter(int[] array1, int[] array2){
-        
+        Arrays.sort(array1);
+        int[] sorted_arr1 = new int[array1.length];
+        for(int i = 0; i < array1.length; i++){
+            sorted_arr1[array1.length - i - 1] = array1[i];
+        }
+        Arrays.sort(array2);
+
+
+        boolean tooSmall = false;
+        int smallest_difference = Integer.MAX_VALUE;
+        int i = 0;
+        int j = 0;
+        while(!tooSmall){
+            while (sorted_arr1[i] > array2[j]){
+                if((sorted_arr1[i] - array2[j]) < smallest_difference){
+                    smallest_difference = sorted_arr1[i] - array2[j];
+                }
+            }
+            if(sorted_arr1[i] < array2[0]){
+
+            }
+            j++;
+        }
+        i++;
+
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(sorted_arr1));
+        System.out.println(Arrays.toString(array2));
+
         return 0;
+    }
+
+    //16.7
+    //Number Max - Maximum of Two Numbers
+    public static String intEnglish(int num){
+        String englishNum = "";
+
+        String[] onesAndTeens = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",
+                "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        String[] tensPlace = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+
+        if(num == 0){
+            return "Zero";
+        }
+        else if (num < 0){
+            return "Negative " + intEnglish(-1 * num);
+        }
+
+
+        if(num > 0 && num < 20){
+            englishNum = englishNum + onesAndTeens[num];
+        }
+
+
+        return englishNum;
     }
 
     public static void main(String[] args){
@@ -144,8 +200,14 @@ public class IntermediateProblems {
         System.out.println(winner);*/
 
         //16.6
-        int[] array1 = new int[]{1, 3, 15, 11, 2};
+        /*int[] array1 = new int[]{1, 3, 15, 11, 2};
         int[] array2 = new int[]{23, 127, 235, 19, 8};
         System.out.println(closestValues(array1, array2));
+        System.out.println(closestValuesBetter(array1, array2));*/
+
+        //16.7
+        System.out.println(intEnglish(-20));
+
+
     }
 }
