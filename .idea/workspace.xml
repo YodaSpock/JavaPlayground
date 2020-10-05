@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2482bc-f28a-4a9d-ba5c-9b38facc6e5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Combination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mastermind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NumPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PairsWithSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Playground/IntermediateProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Playground/IntermediateProblems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntermediateProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntermediateProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Playground/BasicFunctions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Playground/BasicFunctions.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +28,7 @@
   <component name="ProjectId" id="1hnBClkUvNex2dgfQv6gPBD8j0F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -40,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IntermediateProblems">
+  <component name="RunManager" selected="Application.PairsWithSum">
     <configuration name="BasicFunctions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicFunctions" />
       <module name="Playground" />
@@ -55,8 +57,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PairsWithSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PairsWithSum" />
+      <module name="Playground" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PairsWithSum" />
         <item itemvalue="Application.IntermediateProblems" />
         <item itemvalue="Application.BasicFunctions" />
       </list>
@@ -80,10 +90,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PairsWithSum.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
